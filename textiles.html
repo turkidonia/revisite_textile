@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <script src="./main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Staatliches&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
     <title>Revisité-Textile</title>
 </head>
 <body>
@@ -19,10 +23,10 @@
                     <img src="./assets/image001-removebg-preview.png" alt="Logo" />
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="./tissus.html">Je cherche des tissus</a></li>
-                    <li><a href="./textiles.html">J'ai des textiles de rebut</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="index.html" class="accueil">Accueil</a></li>
+                    <li><a href="./tissus.html">JE CHERCHE DES TISSUS</a></li>
+                    <li><a href="./textiles.html">J'AI DES TEXTILES DE REBUT</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
                 </ul>
                 <div class="sociallinks-header">
                     <a href="https://www.instagram.com/revisite_textile/" target="_blank">
@@ -47,12 +51,12 @@
           <p class="section-text">
             Grâce à notre réseau de partenaires et clients, vos déchets retrouvent ainsi une seconde vie, le tout en circuit-court.
           </p>
-          <div class="image-grid">
-            <img src="./assets/Photo linge BGL.jpg" alt="Image 1" class="responsive-image">
-            <img src="./assets/IMG_2.jpg" alt="Image 2" class="responsive-image">
-            <img src="./assets/img3.jpg" alt="Image 3" class="responsive-image">
-            <img src="./assets/Prototype vêtement 1.jpg" alt="Image 4" class="responsive-image">
-          </div>
+          <div class="image-gallery">
+            <div class="image-item image1"></div>
+            <div class="image-item image2"></div>
+            <div class="image-item image3"></div>
+            <div class="image-item image4"></div>
+        </div>
         </div>
       
         <div class="partners-section">
@@ -70,16 +74,24 @@
             <a href="https://www.instagram.com/revisite_textile/" target="_blank" class="button">Suivez-nous sur Instagram</a>
           </div>
         </div>
-      </div>
       
+      <div class="full-height-image">
+        <img src="./assets/Page instagram (pour blanchisseries).png" alt="Description de l'image" />
+      </div>
 
+      <div class="mission-buttons">
+        <a href="./tissus.html" class="mission-button">CONTACTEZ-NOUS</a>
+        <a href="https://calendly.com/votre-lien" target="_blank" class="mission-button">PRENDRE UN RDV</a>
+      </div>
+       
+    </div>
 
     <footer class="footer">
         <div class="footer-left">
             <img src="./assets/image001-removebg-preview.png" alt="Logo de l'entreprise" class="footer-logo">
-            <p>Adresse : 9 Rue des Colonnes
-               75002 Paris
-            </p>
+            <p>Adresse : 9 Rue des Colonnes</p>
+            <p> 75002 Paris</p>
+            
             <p>Email : <a href="anne.gulino@revisite-textile.com">anne.gulino@revisite-textile.com</a></p>
         </div>
 

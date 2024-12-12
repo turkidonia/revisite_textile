@@ -5,14 +5,19 @@
 }
 
 body {
-    width:1440px ;
-    font-family: 'Patrick Hand', cursive;
-    color: #000000;  
+    max-width:1440px ;
+    margin: auto;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000; 
+    overflow-x: hidden; 
 }
 
 header {
     height: 10vh;
     width: 100%;
+    
 }
 
 .burger {
@@ -29,6 +34,11 @@ header .navbar {
     align-items: center;
     justify-content: space-between;
     color: #000000;
+    /*position: fixed;
+    top: 0;
+    width: 90%;
+    z-index: 1000;*/
+   
 }
 
 header .logo{
@@ -38,9 +48,10 @@ header .logo{
     align-items: center;
     padding-left: 10px;
 }
+
 header .logo img{
     width: 100px;
-    height: 40px;
+    height: 30px;
 }
 
 .nav-links {
@@ -58,11 +69,14 @@ header .logo img{
     text-decoration: none;
     color: #000000;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
+  text-decoration: underline;
     color: #81A969;
 }
 
@@ -75,7 +89,7 @@ header .logo img{
   }
   
   .sociallinks-header img {
-    width: 50px;
+    width: 30px;
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
   
@@ -103,16 +117,26 @@ header .logo img{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 50px;
+    padding-top: 150px;
     
 }
 
-.logo-home h1 {
-    font-size: 2.5em;
-    padding-top: 100px;   
+.logo-home p {
+    padding-top: 20px;
+    font-size: 2em;
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;   
+}
+.Logo img{
+  width: 700px;
+  height: 200px;
+}
+ .accueil {
+  color: #81A969;
 }
 
-  
+
 .marquee {
     width: 100%;
     height: 20vh;
@@ -131,9 +155,13 @@ header .logo img{
   }
 
   .marquee span {
-    font-size: 80px;
+    font-size: 40px;
     color: #000000;
     padding-left: 20px;
+    font-family: "Staatliches", sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    word-spacing: 10px;
   }
 
 .video-container {
@@ -171,18 +199,25 @@ header .logo img{
   
   
  .mission-text1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #000000;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
   }
 
   
   .mission-text2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #000000;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
    
   .mission-text3 {
@@ -190,6 +225,9 @@ header .logo img{
     color: #000000;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
   
   .mission-buttons {
@@ -202,25 +240,54 @@ header .logo img{
     padding-top: 50px;
   }
   
-  .mission-button {
+  .mission-button1 {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 40px;
+    border-radius: 50px 50px;
+    font-size: 2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .mission-button2 {
     text-decoration: none;
     background-color: #ffffff;
     color: #000000;
     padding: 10px 20px;
-    border-radius: 20px 20px;
+    border-radius: 50px 50px;
     font-size: 2rem;
-    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .mission-button3 {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 80px;
+    border-radius: 50px 50px;
+    font-size: 2rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
-  .mission-button:hover {
+  .mission-button1:hover {
     background-color: #81A969;
     transform: scale(1.05);
   }
-  
+
+  .mission-button2:hover {
+    background-color: #81A969;
+    transform: scale(1.05);
+  }
+
+  .mission-button3:hover {
+    background-color: #81A969;
+    transform: scale(1.05);
+  }
+
   .section-container {
     width: 100%;
-   height: 350vh;
+    height: 350vh;
   }
   
   .offer-section{
@@ -258,15 +325,37 @@ header .logo img{
     line-height: 1.6;
     max-width: 800px;
   }
-  
-  .image-grid {
+
+  .image-gallery {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
     gap: 20px;
-    margin-top: 20px;
-    width: 100%;
-    height: 40vh;
+    flex-wrap: wrap;
+  }
+  
+  .image-gallery .image-item {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .image-gallery .image1 {
+    background-image: url("./assets/Photo\ linge\ BGL.jpg");
+  }
+  
+  .image-gallery .image2 {
+    background-image: url("./assets/IMG_2.jpg");
+  }
+  
+  .image-gallery .image3 {
+    background-image: url("./assets/img3.jpg");
+  }
+  
+  .image-gallery .image4 {
+    background-image: url("./assets/Prototype\ vêtement\ 1.jpg");
   }
   
   .responsive-image {
@@ -306,6 +395,25 @@ header .logo img{
     transform: scale(1.05);
   }
    
+
+  .full-height-image {
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    display: flex; /* Centre l'image */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    background-color: #f4f4f4; /* Couleur de fond (optionnel) */
+    overflow: hidden; /* Assure que rien ne dépasse */
+  }
+  .mission-buttons{
+    background-color: #D6D1CA;
+  }
+  
+  .full-height-image img {
+    max-height: 100%; /* Adapte la hauteur au conteneur */
+    max-width: 100%; /* Adapte la largeur au conteneur */
+    object-fit: cover; /* Remplit le conteneur sans déformer l'image */
+  }
+  
 .footer {
     width: 100%;
     height: 30vh;
@@ -335,6 +443,9 @@ header .logo img{
   .footer-left a {
     margin: 5px 0;
     font-size: 25px;
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;   
   }
   
   .footer-left a {
@@ -377,12 +488,42 @@ header .logo img{
     color: #000000;
     font-size: 15px;
     transition: color 0.3s ease;
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;   
   }
   
   .footer-right a:hover {
     color: #81A969;
   }
   
+
+  #back-to-top {
+    position: fixed;
+    bottom: 200px; /* Position depuis le bas */
+    right: 40px; /* Position depuis la droite */
+    width: 50px; /* Largeur de la flèche */
+    height: 50px; /* Hauteur de la flèche */
+    background-color: #D6D1CA; /* Couleur de fond */
+    color: #000000;
+    border: solid #000000;
+    text-align: center; /* Centrer le texte (la flèche) */
+    line-height: 50px; /* Centrer verticalement le texte */
+    font-size: 24px; /* Taille de la flèche */
+    border-radius: 25%; /* Forme ronde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Légère ombre */
+    cursor: pointer; /* Pointeur en forme de main */
+    text-decoration: none; /* Supprime le soulignement */
+    display: none; /* Cachée par défaut */
+    z-index: 1000; 
+  }
+  
+  #back-to-top:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    color: #81A969;
+    border: solid #81A969;
+  }
   @media (max-width: 768px) {
 
     .nav-links {

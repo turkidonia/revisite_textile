@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <script src="./main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Staatliches&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
     <title>Revisité-Textile</title>
 </head>
 <body>
@@ -19,10 +23,10 @@
                     <img src="./assets/image001-removebg-preview.png" alt="Logo" />
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="./tissus.html">Je cherche des tissus</a></li>
-                    <li><a href="./textiles.html">J'ai des textiles de rebut</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="index.html" class="accueil">ACCUEIL</a></li>
+                    <li><a href="./tissus.html">JE CHERCHE DES TISSUS</a></li>
+                    <li><a href="./textiles.html">J'AI DES TEXTILES DE REBUT</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
                 </ul>
                 <div class="sociallinks-header">
                     <a href="https://www.instagram.com/revisite_textile/" target="_blank">
@@ -39,15 +43,15 @@
     <main class="main-content">
         <div class="home">
            <div class="logo-home">
-                <div class="logo">
+                <div class="Logo">
                     <img src="./assets/image001-removebg-preview.png" alt="Logo" />
                 </div>
 
-                <h1>Tissus de seconde main à upcycler</h1>
+                <p>Tissus de seconde main à upcycler</p>
            </div>
             
             <div class="marquee">
-                <span>INDUSTRIE TEXTILE + VALORISATION + IMPACT + ECONOMIE CIRCULAIRE + UPCYCLING + INNOVATION</span>
+                <span>Industrie textile + VALORISATION + IMPACT + ECONOMIE CIRCULAIRE + UPCYCLING + INNOVATION</span>
             </div>    
         </div>
 
@@ -58,7 +62,7 @@
         </div>
 
         <div class="mission-container">
-            <h1 class="mission-title">Notre Mission</h1>
+            <h1 class="mission-title">NOTRE MISSION</h1>
             <p class="mission-text1">
             Chaque année, des milliers de tonnes* de linge professionnel sont jetées ou mal valorisées.
             </p>
@@ -69,15 +73,16 @@
                 *12 000 à 23 000 tonnes, d’après l’étude de l’ADEME “Potentiel de recyclage des textiles non réutilisables”, septembre 2023.
             </p>
             <div class="mission-buttons">
-              <a href="./tissus.html" class="mission-button">Je cherche des tissus</a>
-              <a href="./textiles.html" class="mission-button">J'ai des textiles de rebut</a>
-              <a href="https://calendly.com/votre-lien" target="_blank" class="mission-button">Prendre un RDV</a>
+              <a href="./tissus.html" class="mission-button1">JE CHERCHE DES TISSUS</a>
+              <a href="./textiles.html" class="mission-button2">J'AI DES TEXTILES DE REBUT</a>
+              <a href="https://calendly.com/votre-lien" target="_blank" class="mission-button3">PRENDRE UN RDV</a>
             </div>
           </div>
           
-          
+         
     </main>
     <footer class="footer">
+        <a id="back-to-top" href="#">TOP</a>
         <div class="footer-left">
             <img src="./assets/image001-removebg-preview.png" alt="Logo de l'entreprise" class="footer-logo">
             <p>Adresse : 9 Rue des Colonnes
@@ -96,9 +101,10 @@
                    <img src="https://media.discordapp.net/attachments/1278654081799422033/1316049590293758022/linkedin1.png?ex=675a4af1&is=6758f971&hm=9c7c0e9828b0cbc1cc7fe99d5d40fbce7265fbc52baacf082fbaa46eeaf40f44&=&format=webp&quality=lossless&width=593&height=593" alt="logo linkedin">
                 </a>
             </div>
-            <a href="./mentions-legales.html">Mentions légales</a>
-            <a href="./privacy-policy.html">Politique de confidentialité</a>
+            <a  href="./docs/mentions-legales.pdf" target="_blank">Mentions légales</a>
+            <a href="./docs/cgu.pdf" target="_blank">Politique de confidentialité</a>
         </div>
+        
     </footer>
 </body>
 </html>
