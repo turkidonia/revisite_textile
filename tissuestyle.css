@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Staatliches&display=swap');
+/* la partie header */
+/* code à donner à Doina lien non clicable sur ma page  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    max-width: 1440px;
+    margin: auto;
+    font-family: "Staatliches", sans-serif;
+    color: #000000;
+  }
+  
+  header {
+    height: 10vh;
+    width: 100%;
+  }
+  
+  .burger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+  }
+  
+  header .logo {
+    width: 20%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  header .logo img {
+    width: 100px;
+    height: 30px;
+  }
+  
+  .nav-links {
+    width: 60%;
+    height: 10vh;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    gap: 100px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #81a969;
+  }
+  
+  .sociallinks-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-right: 20px;
+  }
+  
+  .sociallinks-header img {
+    width: 50px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .sociallinks-header img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+.main-content {
+    width: 100%;
+    text-align: center;
+  }
+  
+/* la partie tissus */
+.section-offre {
+    padding: 50px 20px;
+    background-color: #d6d1ca;
+    text-align: center;
+  }
+  .section-offre h1 {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .section-offre .description-paragraph1,
+  .section-offre .description-paragraph2,
+  .section-offre .description-paragraph3 {
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 2.1;
+    margin: 0 auto 20px auto;
+    max-width: 800px;
+    color: #000000;
+  }
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .image-gallery .image-item {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .image-gallery .image1 {
+    background-image: url("./assets/Photo\ linge\ BGL.jpg");
+  }
+  
+  .image-gallery .image2 {
+    background-image: url("./assets/IMG_8386.jpg");
+  }
+  
+  .image-gallery .image3 {
+    background-image: url("./assets/laser\ photo\(1\).jpg");
+  }
+  
+  .image-gallery .image4 {
+    background-image: url("./assets/IMG_8390\(1\).jpg");
+  }
+  .section-avis-clients {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .section-avis-clients h1 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #81a969;
+    margin-bottom: 30px;
+  }
+  
+  .avis-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .avis {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+  }
+  
+  .avis p {
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 1.8;
+  }
+  .catalogue-btn {
+    margin-top: 50px;
+  }
+
+  .catalogue-btn a {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 40px;
+    border-radius: 50px 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 2px solid #000000;
+  }
+  .catalogue-btn a:hover {
+    background-color: #81a969;
+    transform: scale(1.05);
+  }
+  
+  .trust-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .trust-section h2 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #81a969;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+  }
+  
+  .logo-item img {
+    object-fit: contain;
+    max-width: 220px;
+  }
+  .section-tissus {
+    /* padding: 50px 20px; */
+    text-align: center;
+  }
+  
+  .section-tissus p {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .text-part1,
+  .text-part2 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #000000;
+    margin: 0;
+  }
+  
+  .text-part1 {
+    margin-bottom: 10px;
+  }
+  /* redurir espace entre button et image */
+  .instagram-button {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 40px; 
+    border-radius: 50px 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 2px solid #000000;
+    line-height: 80px;
+  }
+  
+  .instagram-button:hover {
+    background-color: #81a969;
+    transform: scale(1.05);
+  }
+  
+  .instagram-capture img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .button-contact {
+    background-color: #d6d1ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 0;
+    height: 300px;
+  }
+  .contact-btn,
+  .button-rdv a {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 40px;
+    border-radius: 50px 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 2px solid #000000;
+  }
+  .nav-links .active3 {
+    color: #81a969;
+  }
+  .contact-btn:hover,
+  .appointment-btn:hover {
+    background-color: #81a969;
+    transform: scale(1.05);
+  }
+
+  .footer {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    color: #000000;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    max-width: 40%;
+  }
+  
+  .footer-logo {
+    width: 200px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-left p,
+  .footer-left a {
+    margin: 5px 0;
+    font-size: 25px;
+  }
+  
+  .footer-left a {
+    text-decoration: none;
+    color: #81a969;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-left a:hover {
+    color: #81a969;
+  }
+  
+  .footer-right {
+    text-align: right;
+    max-width: 40%;
+    margin-top: 20px;
+  }
+  
+  .sociallinks-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .sociallinks-footer img {
+    width: 50px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .sociallinks-footer img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  
+  .footer-right a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-right a:hover {
+    color: #81a969;
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    header .logo {
+      order: 1; /* Place le logo à gauche */
+      margin-right: auto;
+    }
+    .sociallinks-header {
+      display: none;
+    }
+    .sociallinks-header {
+      display: none;
+    }
+  
+    .burger {
+      display: block;
+      padding: 10px;
+      order: 2;
+    }
+  
+    .nav-links.show {
+      display: flex;
+      background-color: #fff;
+      height: fit-content;
+    }
+  
+    .nav-links {
+      display: none; /* Cacher les liens par défaut */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 20px 0;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .nav-links li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-links li a {
+      padding: 15px 0;
+      font-size: 1.5rem;
+    }
+  
+    .section-offre,
+    .section-avis-clients,
+    .trust-section,
+    .section-tissus {
+      padding: 30px 10px;
+    }
+    .trust-section {
+      padding: 30px 10px;
+    }
+  
+    .trust-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .logo-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .logo-item img {
+      max-width: 150px;
+    }
+  
+    .section-offre h1,
+    .section-avis-clients h1,
+    .trust-section h2,
+    .section-tissus p {
+      font-size: 1.5rem;
+    }
+  
+    .image-gallery-tissus {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-gallery-tissus .image-item {
+      width: 90%;
+      height: auto;
+    }
+  
+    .catalogue-btn a,
+    .button-contact-form,
+    .button-rdv {
+      font-size: 1.5rem;
+      padding: 10px 20px;
+    }
+    .contact-btn {
+      display: inline-flex;
+      margin: -31px;
+    }
+    .button-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .button-contact-form,
+    .button-rdv {
+      width: 100%;
+      padding: 10px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .button-rdv {
+      padding: 16px;
+      text-align: -webkit-center;
+    }
+  
+    .button-rdv a {
+      width: 270px;
+      display: block;
+    }
+    .section-tissus a {
+      width: 100%;
+      padding: 10px;
+      font-size: 1.5rem;
+      text-align: center;
+      background-color: #ffffff;
+      color: #000000;
+      border-radius: 50px;
+      border: 2px solid #000000;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+  
+    .section-tissus a :hover {
+      background-color: #81a969;
+      transform: scale(1.05);
+    }
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .footer-logo {
+      width: 80px;
+      height: auto;
+    }
+    footer #back-to-top {
+      display: none;
+      position: absolute;
+    }
+    .footer-left p {
+      display: none;
+    }
+    .sociallinks-footer {
+      justify-content: center;
+      width: 30px;
+      height: auto;
+      gap: 30px;
+    }
+    .footer-right .footer-text {
+      display: none;
+    }
+  }
+  
